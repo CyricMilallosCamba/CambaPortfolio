@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyric Camba</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="#">Cyric Portfolio</a></div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#socials">Socials</a>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <header class="hero">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="typewriter"></h1>
+          <p>Welcome to my personal portfolio website.</p>
+          <a href="resume/Cyric Industrial Resume.docx" download class="button">Download CV</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/Cyric.jpg" alt="Cyric Camba" loading="lazy" class="lazy-load">
+        </div>
+      </div>
+    </header>
+  </section>  
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Learn more about my background</p>
+    </div>
+  
+    <div class="tab-buttons">
+      <button class="tab-button active" data-tab="education">Education</button>
+      <button class="tab-button" data-tab="skills">Skills</button>
+      <button class="tab-button" data-tab="experience">Work Experience</button>
+    </div>
+  
+    <div class="tab-content">
+      <div class="tab-panel active" id="education">
+        <h3>Education</h3>
+        <p>Information Technology Diploma<br>STI Alaminos, 2025</p>
+      </div>
+      <div class="tab-panel" id="skills">
+        <h3>Skills</h3>
+        <ul>
+          <p>Computer Proficiency</p>
+          <p>echnology/Computer Related Skills</p>
+          <p>Time - Management Skills</p>
+          <p>Verbal and written Communication skills</p>
+          <p>Office Applications</p>
+          <p>Programming Fundamentals</p>
+        </ul>
+      </div>
+      <div class="tab-panel" id="experience">
+        <h3>Work Experience</h3>
+        <p>Full time 1year work in Jollibee Dagupan City I am a waiter.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-header">
+      <h2>Services</h2>
+      <p>What I can offer</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/pen-tool.png" alt="Graphic Designing" loading="lazy" class="lazy-load">
+        <h3>Graphic Designing</h3>
+        <p>I create visually appealing graphics, logos, and branding materials for businesses and personal projects.</p>
+      </div>
+      <div class="card">
+        <img src="images/laptop.png" alt="Programming" loading="lazy" class="lazy-load">
+        <h3>Programming</h3>
+        <p>Skilled in web development with a strong command of HTML, CSS, JavaScript, and various frameworks.</p>
+      </div>
+      <div class="card">
+        <img src="images/office.png" alt="Microsoft Office" loading="lazy" class="lazy-load">
+        <h3>Microsoft Office</h3>
+        <p>Expert in Microsoft Office Suite, including Word, Excel, PowerPoint, and Outlook, for efficient business solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Get in touch with me</p>
+    </div>
+    <div class="contact-form-container">
+      <form action="https://formspree.io/f/xovdeeog" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="Your Email" name="email">
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+        <div id="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Socials Section -->
+  <section id="socials">
+    <div class="section-header">
+      <h2>Socials</h2>
+      <p>Connect with me on social media</p>
+    </div>
+    <div class="social-container">
+      <a href="https://www.instagram.com/cirycabmac/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@cyric.camba?_t=ZS-8w1FvSzUHmC&_r=1" target="_blank" class="social-link">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/cyric-camba-430b74332/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/CyricMilallosCamba" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
