@@ -256,7 +256,7 @@ body.light-mode {
     to { opacity: 1; transform: translateY(0); }
   }
   
-      .projects-section {
+   .projects-section {
       padding: 40px 20px;
       text-align: center;
     }
